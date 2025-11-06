@@ -54,7 +54,10 @@ def puissance(a, b):
 
 # 12. Retourne l'inverse du nombre
 def inverse(a):
-    return 1 / a
+    try:
+        return 1 / a
+    except ZeroDivisionError:
+        print("Division par zéro impossible.")
 
 
 # 13. Retourne une version triée de la liste
